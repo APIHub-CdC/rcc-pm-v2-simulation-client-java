@@ -34,7 +34,7 @@ public class RespuestaRCCV2ClavePrevenciones {
   private String numeroContrato = null;
 
   @SerializedName("clavePrevencion")
-  private CatalogoClavesPrevencion clavePrevencion = null;
+  private String clavePrevencion = null;
 
   public RespuestaRCCV2ClavePrevenciones nombreOtorgante(String nombreOtorgante) {
     this.nombreOtorgante = nombreOtorgante;
@@ -90,7 +90,7 @@ public class RespuestaRCCV2ClavePrevenciones {
     this.numeroContrato = numeroContrato;
   }
 
-  public RespuestaRCCV2ClavePrevenciones clavePrevencion(CatalogoClavesPrevencion clavePrevencion) {
+  public RespuestaRCCV2ClavePrevenciones clavePrevencion(String clavePrevencion) {
     this.clavePrevencion = clavePrevencion;
     return this;
   }
@@ -100,11 +100,11 @@ public class RespuestaRCCV2ClavePrevenciones {
    * @return clavePrevencion
   **/
   @ApiModelProperty()
-  public CatalogoClavesPrevencion getClavePrevencion() {
+  public String getClavePrevencion() {
     return clavePrevencion;
   }
 
-  public void setClavePrevencion(CatalogoClavesPrevencion clavePrevencion) {
+  public void setClavePrevencion(String clavePrevencion) {
     this.clavePrevencion = clavePrevencion;
   }
 
