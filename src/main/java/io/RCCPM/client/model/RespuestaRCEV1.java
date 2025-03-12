@@ -51,7 +51,7 @@ public class RespuestaRCEV1 {
   private List<RespuestaRCEV1CalificacionCartera> calificacionCartera = null;
 
   @SerializedName("clavePrevenciones")
-  private List<RespuestaRCEV1ClavePrevenciones> clavePrevenciones = null;
+  private List<RespuestaRCCV2ClavePrevenciones> clavePrevenciones = null;
 
   @SerializedName("consultasInstitucionales")
   private ConsultasInstitucionalesRCE consultasInstitucionales = null;
@@ -223,14 +223,14 @@ public class RespuestaRCEV1 {
     this.calificacionCartera = calificacionCartera;
   }
 
-  public RespuestaRCEV1 clavePrevenciones(List<RespuestaRCEV1ClavePrevenciones> clavePrevenciones) {
+  public RespuestaRCEV1 clavePrevenciones(List<RespuestaRCCV2ClavePrevenciones> clavePrevenciones) {
     this.clavePrevenciones = clavePrevenciones;
     return this;
   }
 
-  public RespuestaRCEV1 addClavePrevencionesItem(RespuestaRCEV1ClavePrevenciones clavePrevencionesItem) {
+  public RespuestaRCEV1 addClavePrevencionesItem(RespuestaRCCV2ClavePrevenciones clavePrevencionesItem) {
     if (this.clavePrevenciones == null) {
-      this.clavePrevenciones = new ArrayList<RespuestaRCEV1ClavePrevenciones>();
+      this.clavePrevenciones = new ArrayList<RespuestaRCCV2ClavePrevenciones>();
     }
     this.clavePrevenciones.add(clavePrevencionesItem);
     return this;
@@ -241,11 +241,11 @@ public class RespuestaRCEV1 {
    * @return clavePrevenciones
   **/
   @ApiModelProperty()
-  public List<RespuestaRCEV1ClavePrevenciones> getClavePrevenciones() {
+  public List<RespuestaRCCV2ClavePrevenciones> getClavePrevenciones() {
     return clavePrevenciones;
   }
 
-  public void setClavePrevenciones(List<RespuestaRCEV1ClavePrevenciones> clavePrevenciones) {
+  public void setClavePrevenciones(List<RespuestaRCCV2ClavePrevenciones> clavePrevenciones) {
     this.clavePrevenciones = clavePrevenciones;
   }
 

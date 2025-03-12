@@ -26,12 +26,12 @@ import io.swagger.annotations.ApiModelProperty;
 
 public class Creditos {
   @SerializedName("cuentasFinancieras")
-  private ArrayList<CreditoPMInner> cuentasFinancieras = null;
+  private ArrayList<CreditoInner> cuentasFinancieras = null;
 
   @SerializedName("cuentasComerciales")
-  private CuentasComerciales cuentasComerciales = null;
+  private ArrayList<CuentasComercialesPMInner>  cuentasComerciales = null;
 
-  public Creditos cuentasFinancieras(ArrayList<CreditoPMInner> cuentasFinancieras) {
+  public Creditos cuentasFinancieras(ArrayList<CreditoInner> cuentasFinancieras) {
     this.cuentasFinancieras = cuentasFinancieras;
     return this;
   }
@@ -41,15 +41,15 @@ public class Creditos {
    * @return cuentasFinancieras
   **/
   @ApiModelProperty()
-  public ArrayList<CreditoPMInner> getCuentasFinancieras() {
+  public ArrayList<CreditoInner> getCuentasFinancieras() {
     return cuentasFinancieras;
   }
 
-  public void setCuentasFinancieras(ArrayList<CreditoPMInner> cuentasFinancieras) {
+  public void setCuentasFinancieras(ArrayList<CreditoInner> cuentasFinancieras) {
     this.cuentasFinancieras = cuentasFinancieras;
   }
 
-  public Creditos cuentasComerciales(CuentasComerciales cuentasComerciales) {
+  public Creditos cuentasComerciales(ArrayList<CuentasComercialesPMInner> cuentasComerciales) {
     this.cuentasComerciales = cuentasComerciales;
     return this;
   }
@@ -59,11 +59,11 @@ public class Creditos {
    * @return cuentasComerciales
   **/
   @ApiModelProperty()
-  public CuentasComerciales getCuentasComerciales() {
+  public ArrayList<CuentasComercialesPMInner> getCuentasComerciales() {
     return cuentasComerciales;
   }
 
-  public void setCuentasComerciales(CuentasComerciales cuentasComerciales) {
+  public void setCuentasComerciales(ArrayList<CuentasComercialesPMInner> cuentasComerciales) {
     this.cuentasComerciales = cuentasComerciales;
   }
 

@@ -31,7 +31,7 @@ public class CreditoInner {
   private String nombreOtorgante = null;
 
   @SerializedName("contrato")
-  private Integer contrato = null;
+  private String contrato = null;
 
   @SerializedName("saldoInicial")
   private Integer saldoInicial = null;
@@ -138,7 +138,7 @@ public class CreditoInner {
     this.nombreOtorgante = nombreOtorgante;
   }
 
-  public CreditoInner contrato(Integer contrato) {
+  public CreditoInner contrato(String contrato) {
     this.contrato = contrato;
     return this;
   }
@@ -148,11 +148,11 @@ public class CreditoInner {
    * @return contrato
   **/
   @ApiModelProperty(example = "2500303093007")
-  public Integer getContrato() {
+  public String getContrato() {
     return contrato;
   }
 
-  public void setContrato(Integer contrato) {
+  public void setContrato(String contrato) {
     this.contrato = contrato;
   }
 
