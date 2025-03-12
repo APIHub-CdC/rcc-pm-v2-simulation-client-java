@@ -72,7 +72,7 @@ public class ReporteDeCrditoConsolidadoDePersonasMoralesV2Api {
         Object localVarPostBody = body;
         
         // create path and map variables
-        String localVarPath = "/sandbox/reporte-pm/v2/rcc-pm";
+        String localVarPath = "";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
